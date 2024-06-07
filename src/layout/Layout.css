@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  background-color: white;
+  border-top: 1px solid #023f7d;
+  border-bottom: 1px solid #023f7d;
+}
+
+.container > * {
+  width: auto;
+  text-decoration: none;
+  padding: 20px 10px;
+  color: black;
+  font-weight: 700;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  text-align: center;
+}
+
+.container > *:hover {
+  background-color: #023f7d;
+  color: white;
+}
+.dropdown {
+  position: absolute;
+  top: 50px;
+  background-color: #023f7d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.dropdown > * {
+  text-decoration: none;
+  color: white;
+  padding: 20px 0 20px 20px;
+}
+
+.dropdown > *:hover {
+  background-color: #2369ae;
+}
+
+.content{
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    color: #023f7d;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+    font-size: large; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container > * {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .dropdown {
+    top: 40px; /* Adjust dropdown position for smaller screens */
+  }
+
+  .dropdown > * {
+    padding: 10px 0 10px 10px; /* Adjust padding for smaller screens */
+  }
+}
