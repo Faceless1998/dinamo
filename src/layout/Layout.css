@@ -182,4 +182,8 @@
   background-color: #2369ae;
   color: white;
 }
+
+.logo p{
+  display: none;
+}
 }
