@@ -1,8 +1,15 @@
-import React from 'react'
-import styles from "./PressService.module.css"
-
+import React from "react";
+import styles from "./PressService.module.css";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 export const PressService = () => {
   return (
-    <div className={styles.container}> PressService</div>
-  )
-}
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <title>პრეს სამსახური</title>
+        </Helmet>
+        <div className={styles.container}> PressService</div>
+      </HelmetProvider>
+    </>
+  );
+};
