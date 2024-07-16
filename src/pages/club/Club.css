@@ -1,0 +1,123 @@
+body {
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "BPG  Mtavruli", sans-serif;
+  }
+  .ttl-table{
+    max-width: 1140px
+  }
+  table {
+    color: #282a2d;
+    display: table;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  th.ttl-cell-club{
+  color:#a9b1be;
+  display:table-cell;
+  font-size:11px;
+  font-weight:700;
+  line-height:11px;
+  padding:1px 1px 1px 37px;
+  text-align:left;
+  }
+  
+  .rank {
+    width: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    height: 10px;
+    border-radius: 2px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  td.rank {
+    border-radius: 5px;
+  }
+  
+  .rank-1 {
+    background-color: rgb(0, 70, 130);
+    color: white;
+  }
+  
+  .rank-2-3 {
+    background-color: rgb(127, 0, 41);
+    color: white;
+  }
+  
+  .rank-8-9 {
+    background-color: rgb(189, 0, 0);
+    color: white;
+  }
+  
+  .rank-10 {
+    background-color: rgb(255, 65, 65);
+    color: white;
+  }
+  
+  .thname {
+    text-align: left;
+    padding-left: 10px;
+  }
+  /* .tdname {
+    padding-left: 10px;
+    color: #838998;
+    display: table-cell;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 5px 14px 0px;
+    text-align: left;
+  } */
+  
+  /* .b-tournament-table-large .ttl-table {
+    font-family: "AlkSanet", Sylfaen, Arial, sans-serif;
+    table-layout: fixed;
+    width: 100%;
+    min-width: 925px;
+    font-size: 14px;
+    line-height: 1;
+  } */
+  
+  .b-tournament-table-large .ttl-cell-position {
+    width: 35px;
+  }
+  
+  td.ttl-cell-club{
+    color:#838998;
+  display:table-cell;
+  font-size:14px;
+  line-height:14px;
+  padding:12px 5px 14px 0px;
+  text-align:left;
+  color:#54636e;
+  font-family:AlkSanet;
+  font-size:14px;
+  line-height:14px;
+  text-align:left;
+  }
+  
+  td.ttl-cell-position{
+  color:#a9b1be;
+  display:table-cell;
+  font-size:14px;
+  line-height:14px;
+  padding:12px 0px 14px;
+  text-align:center;
+  }
+  
+  
+  td.ttl-cell-plays.ttl-num{
+    color:#838998;
+  display:table-cell;
+  font-size:16.8px;
+  line-height:16.8px;
+  padding:12px 0px 10px;
+  text-align:center;
+  }

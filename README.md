@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout"
+import "./App.css"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+import {Home} from "./pages/home/Home"
+import {Club} from "./pages/club/Club"
+import {Team} from "./pages/team/Team"
+import {AgeTeam} from "./pages/ageTeam/AgeTeam"
+import {Media} from "./pages/media/Media"
+import {Fan} from "./pages/fan/Fan"
+import {Contact} from "./pages/contact/Contact"
+import {HistoryOfTheTeam} from "./subpages/clubsub/HistoryOfTheTeam/HistoryOfTheTeam"
+import {Administration} from "./subpages/clubsub/Administration/Administration"
+import {FinancialReporting} from "./subpages/clubsub/FinancialReporting/FinancialReporting"
+import {Structure} from "./subpages/clubsub/Structure/Structure"
+import {Dynamo} from "./subpages/teamsub/Dynamo/Dynamo"
+import {CoachingStaff} from "./subpages/teamsub/CoachingStaff/CoachingStaff"
+import {TechnicalStaff} from "./subpages/teamsub/TechnicalStaff/TechnicalStaff"
+import {CorpsOfCoaches} from "./subpages/agesub/CorpsOfCoaches/CorpsOfCoaches"
+import {Personnel} from "./subpages/agesub/Personnel/Personnel"
+import {PressService} from "./subpages/mediasub/PressService/PressService"
+import {Photogallery} from "./subpages/mediasub/Photogallery/Photogallery"
+import {VideoGallery} from "./subpages/mediasub/VideoGallery/VideoGallery"
+import { NoPage } from "./Nopage/NoPage";
 
-## Available Scripts
+function App() {
+  return (
+    <>
 
-In the project directory, you can run:
+    <Layout />
+      <Routes>
 
-### `npm start`
+        <Route path="/" element={<Home />} />
+        <Route path="/Club" element={<Club />} />
+        <Route path="/Team" element={<Team />} />
+        <Route path="/AgeTeam" element={<AgeTeam />} />
+        <Route path="/Media" element={<Media />} />
+        <Route path="/Fan" element={<Fan />} />
+        <Route path="/Contact" element={<Contact />} />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        <Route path="/HistoryOfTheTeam" element={<HistoryOfTheTeam />} />
+        <Route path="/Administration" element={<Administration />} />
+        <Route path="/FinancialReporting" element={<FinancialReporting />} />
+        <Route path="/Structure" element={<Structure />} />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        <Route path="/Dynamo" element={<Dynamo />} />
+        <Route path="/CoachingStaff" element={<CoachingStaff />} />
+        <Route path="/TechnicalStaff" element={<TechnicalStaff />} />
 
-### `npm test`
+        <Route path="/CorpsOfCoaches" element={<CorpsOfCoaches />} />
+        <Route path="/Personnel" element={<Personnel />} />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        <Route path="/PressService" element={<PressService />} />
+        <Route path="/Photogallery" element={<Photogallery />} />
+        <Route path="/VideoGallery" element={<VideoGallery />} />
 
-### `npm run build`
+        <Route path="*" element={ <NoPage /> } />
+      </Routes>
+      
+    </>
+  );
+}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+export default App;

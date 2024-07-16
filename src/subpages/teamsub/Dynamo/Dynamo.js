@@ -9,6 +9,9 @@ export const Dynamo = () => {
           <title>დინამო</title>
         </Helmet>
         <div className={styles.container}> Dynamo</div>
+        <div>
+          
+        </div>
       </HelmetProvider>
     </>
   );
