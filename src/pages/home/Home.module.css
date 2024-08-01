@@ -1,0 +1,10 @@
+/* App.css */
+header {
+    padding: 20px 0;
+  }
+  
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+  
